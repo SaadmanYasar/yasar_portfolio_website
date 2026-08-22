@@ -3,129 +3,340 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Saadman Yasar — optical systems, sensing, and intelligent autonomy.">
-  <meta name="theme-color" content="#07101d">
-  <title>Saadman Yasar — Optical Systems</title>
+  <meta name="description" content="Saadman Yasar — research portfolio in optics, autonomous systems, and intelligent sensing.">
+  <meta name="theme-color" content="#0d0f14">
+  <title>Saadman Yasar — Research Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
+  <div class="progress" aria-hidden="true"></div>
 
-  <header class="site-header">
-    <nav class="nav shell" aria-label="Primary navigation">
-      <a class="logo" href="#top" aria-label="Saadman Yasar, home">SY<span>.</span></a>
-      <button class="menu-button" type="button" aria-expanded="false" aria-controls="nav-links">
-        <span></span><span></span><span class="sr-only">Open menu</span>
-      </button>
-      <div class="nav-links" id="nav-links">
-        <a href="#work">Work</a>
-        <a href="#about">About</a>
-        <a class="nav-contact" href="https://github.com/SaadmanYasar">GitHub <span aria-hidden="true">↗</span></a>
-      </div>
-    </nav>
-  </header>
+  <nav class="site-nav" aria-label="Primary navigation">
+    <a class="nav-brand" href="#hero">Saadman<span>.</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+      <span></span><span></span><span class="sr-only">Open navigation</span>
+    </button>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="#news">News</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="resume-link" href="#resume">Resume <span>↗</span></a>
+  </nav>
 
   <main id="main">
-    <section class="hero shell" id="top">
-      <div class="hero-copy reveal">
-        <p class="eyebrow"><span></span> Optics · autonomy · intelligent systems</p>
-        <h1>I build optical systems that <em>think ahead.</em></h1>
-        <p class="lede">I'm Saadman Yasar. This portfolio explores predictive optical systems, real-time sensing, and autonomous platforms.</p>
+    <section class="hero" id="hero">
+      <div class="hero-copy">
+        <div class="hero-tag"><span></span> Optics · Autonomy · Intelligent Systems</div>
+        <p class="hero-kicker">Research portfolio</p>
+        <h1>Saadman<br>Yasar</h1>
+        <p class="hero-statement">I build optical systems that <em>think ahead.</em></p>
+        <p class="hero-bio">A growing portfolio of work in free-space optical communication, motion prediction, multi-sensor estimation, and real-time beam control. Detailed project and publication information will be added here progressively.</p>
         <div class="hero-actions">
-          <a class="button button-primary" href="#work">Explore the work <span aria-hidden="true">→</span></a>
-          <p>Research portfolio <span>2026</span></p>
+          <a class="primary-action" href="#projects">View projects <span>↓</span></a>
+          <a class="secondary-action" href="https://github.com/SaadmanYasar" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
         </div>
       </div>
 
-      <div class="signal-card reveal" aria-label="Abstract visualization of a predictive optical tracking system">
-        <div class="signal-label"><span>OPTICAL LINK</span><span>PREDICTIVE TRACKING</span></div>
-        <svg viewBox="0 0 540 560" role="img" aria-label="A blue prediction path converging on an amber optical target">
+      <div class="hero-orbit" aria-label="Abstract predictive optical link graphic">
+        <div class="orbit-grid"></div>
+        <svg viewBox="0 0 440 440" role="img" aria-label="Optical beam tracking a moving target">
           <defs>
-            <linearGradient id="beam" x1="0" x2="1">
-              <stop offset="0" stop-color="#2764ff" stop-opacity="0"/>
-              <stop offset=".35" stop-color="#2764ff"/>
-              <stop offset="1" stop-color="#ffb23f"/>
+            <linearGradient id="pathGradient" x1="0" x2="1">
+              <stop offset="0" stop-color="#38bdf8" stop-opacity=".1"/>
+              <stop offset=".5" stop-color="#38bdf8"/>
+              <stop offset="1" stop-color="#6ee7b7"/>
             </linearGradient>
-            <radialGradient id="glow">
-              <stop offset="0" stop-color="#ffb23f" stop-opacity=".45"/>
-              <stop offset="1" stop-color="#ffb23f" stop-opacity="0"/>
+            <radialGradient id="targetGlow">
+              <stop offset="0" stop-color="#6ee7b7" stop-opacity=".5"/>
+              <stop offset="1" stop-color="#6ee7b7" stop-opacity="0"/>
             </radialGradient>
           </defs>
-          <path class="orbit" d="M76 372C116 118 426 61 474 298C507 462 324 511 197 417C97 343 162 186 286 177"/>
-          <path class="orbit orbit-two" d="M87 465C-4 304 113 117 304 126C478 135 539 344 398 477"/>
-          <path class="beam" d="M32 458C133 416 167 318 260 286S381 287 446 190"/>
-          <circle class="origin" cx="32" cy="458" r="7"/>
-          <circle class="target-glow" cx="446" cy="190" r="58"/>
-          <circle class="pulse" cx="446" cy="190" r="31"/>
-          <circle class="target" cx="446" cy="190" r="7"/>
-          <path class="crosshair" d="M446 145v25m0 40v25m-45-45h25m40 0h25"/>
+          <circle class="ring ring-a" cx="220" cy="220" r="155"/>
+          <circle class="ring ring-b" cx="220" cy="220" r="108"/>
+          <path class="route route-one" d="M48 328C110 302 129 221 205 202S306 218 356 120"/>
+          <path class="route route-two" d="M40 350C128 356 162 290 225 270S332 243 392 170"/>
+          <circle class="source" cx="48" cy="328" r="6"/>
+          <circle class="target-glow" cx="356" cy="120" r="48"/>
+          <circle class="target-pulse" cx="356" cy="120" r="23"/>
+          <circle class="target" cx="356" cy="120" r="6"/>
+          <path class="crosshair" d="M356 84v20m0 32v20m-36-36h20m32 0h20"/>
         </svg>
-        <div class="readout readout-left"><span>SENSING</span><strong>Real time</strong></div>
-        <div class="readout readout-right"><span>PREDICTION</span><strong>Ahead</strong></div>
+        <div class="orbit-label top"><span>SYSTEM</span><strong>Predictive optics</strong></div>
+        <div class="orbit-label bottom-left"><span>SENSE</span><strong>Present state</strong></div>
+        <div class="orbit-label bottom-right"><span>ACT</span><strong>Future state</strong></div>
+        <div class="initials">SY</div>
       </div>
     </section>
 
-    <section class="metrics" aria-label="Focus areas">
-      <div class="shell metrics-grid">
-        <div><strong>Optics</strong><span>Free-space links</span></div>
-        <div><strong>Sensing</strong><span>Multi-sensor systems</span></div>
-        <div><strong>Control</strong><span>Beam steering</span></div>
-        <div><strong>AI</strong><span>Motion prediction</span></div>
+    <section id="news" class="section">
+      <div class="section-head reveal">
+        <div><p class="section-label">Latest</p><h2>News & Updates</h2></div>
+        <p class="section-note">A running timeline for research milestones, publications, presentations, and awards.</p>
       </div>
-    </section>
-
-    <section class="work shell" id="work">
-      <header class="section-heading reveal">
-        <p class="eyebrow"><span></span> Selected focus</p>
-        <p>Two connected ideas: predicting motion and keeping an optical link aligned while the platform moves.</p>
-      </header>
-
-      <div class="project-grid">
-        <article class="project project-blue reveal">
-          <div class="project-number"><span>01</span><span>Predictive control</span></div>
-          <div class="project-visual">
-            <div class="prediction-line"></div>
-            <span class="sample s1"></span><span class="sample s2"></span><span class="sample s3"></span><span class="sample s4"></span>
-            <span class="future-point"></span>
-          </div>
-          <h2>Beam alignment<br>before motion happens.</h2>
-          <p>Using predicted motion to move an optical steering system ahead of latency instead of reacting after misalignment occurs.</p>
-          <div class="tags"><span>Prediction</span><span>Beam steering</span><span>Free-space optics</span></div>
+      <div class="news-list reveal">
+        <article class="news-item">
+          <time>Aug 2026</time>
+          <p><strong>Portfolio redesign launched.</strong> Research details will be added section by section.</p>
+          <span class="badge badge-new">New</span>
         </article>
-
-        <article class="project project-amber reveal">
-          <div class="project-number"><span>02</span><span>Sensor fusion</span></div>
-          <div class="project-visual sensor-visual">
-            <span class="sensor-node node-one">IMU</span>
-            <span class="sensor-node node-two">RANGE</span>
-            <span class="sensor-node node-three">VISION</span>
-            <span class="fusion-node">POSE</span>
-          </div>
-          <h2>One reliable pose<br>from noisy sensors.</h2>
-          <p>Combining complementary sensor streams into a stable motion estimate designed for real-time optical control.</p>
-          <div class="tags"><span>IMU</span><span>Ranging</span><span>Computer vision</span></div>
+        <article class="news-item muted-item">
+          <time>Coming soon</time>
+          <p>Publication and conference updates will appear here.</p>
+          <span class="badge">Update</span>
+        </article>
+        <article class="news-item muted-item">
+          <time>Coming soon</time>
+          <p>Project milestones, demonstrations, and research announcements.</p>
+          <span class="badge">Research</span>
         </article>
       </div>
     </section>
 
-    <section class="about shell" id="about">
-      <p class="eyebrow reveal"><span></span> Approach</p>
-      <div class="about-grid">
-        <h2 class="reveal">Sense the present.<br><em>Predict the next.</em></h2>
-        <div class="about-copy reveal">
-          <p>The work focuses on translating difficult physical problems into systems that can sense, predict, and act in real time.</p>
-          <a href="https://github.com/SaadmanYasar">View GitHub profile <span aria-hidden="true">↗</span></a>
+    <section id="research" class="section">
+      <div class="section-head reveal">
+        <div><p class="section-label">Focus areas</p><h2>Research Interests</h2></div>
+        <p class="section-note">The core themes connecting optical communication, autonomous platforms, sensing, and intelligent control.</p>
+      </div>
+      <div class="interest-grid">
+        <article class="interest-card reveal">
+          <span class="interest-icon">01</span>
+          <h3>Free-Space Optical Links</h3>
+          <p>Reliable high-rate optical communication between moving platforms.</p>
+        </article>
+        <article class="interest-card reveal">
+          <span class="interest-icon">02</span>
+          <h3>Predictive Beam Control</h3>
+          <p>Forecasting motion early enough to compensate for sensing and actuation delay.</p>
+        </article>
+        <article class="interest-card reveal">
+          <span class="interest-icon">03</span>
+          <h3>Multi-Sensor Estimation</h3>
+          <p>Combining inertial, ranging, and visual measurements into a stable pose estimate.</p>
+        </article>
+        <article class="interest-card reveal">
+          <span class="interest-icon">04</span>
+          <h3>Autonomous Platforms</h3>
+          <p>Optical systems designed for the motion and constraints of aerial robotics.</p>
+        </article>
+        <article class="interest-card reveal">
+          <span class="interest-icon">05</span>
+          <h3>Optical Modeling</h3>
+          <p>Link budgets, beam propagation, coupling, and receiver-performance analysis.</p>
+        </article>
+        <article class="interest-card reveal">
+          <span class="interest-icon">06</span>
+          <h3>Machine Learning</h3>
+          <p>Data-driven prediction and adaptive control for dynamic physical systems.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="education" class="section">
+      <div class="section-head reveal">
+        <div><p class="section-label">Academic background</p><h2>Education</h2></div>
+        <p class="section-note">Degree, institution, advisor, dates, and research focus can be added when you provide them.</p>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item reveal">
+          <div class="timeline-date">Current</div>
+          <div class="timeline-line"><span></span></div>
+          <div class="timeline-card">
+            <p class="timeline-type">Doctoral studies</p>
+            <h3>Ph.D. information coming soon</h3>
+            <p class="timeline-place">Institution · Department · Location</p>
+            <p>Add your research focus, advisor, relevant coursework, and expected graduation date here.</p>
+          </div>
+        </article>
+        <article class="timeline-item reveal">
+          <div class="timeline-date">Previous</div>
+          <div class="timeline-line"><span></span></div>
+          <div class="timeline-card">
+            <p class="timeline-type">Previous degree</p>
+            <h3>Degree information coming soon</h3>
+            <p class="timeline-place">Institution · Department · Location</p>
+            <p>Add thesis, concentration, major achievements, or relevant academic details here.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="section-head reveal">
+        <div><p class="section-label">Work history</p><h2>Experience</h2></div>
+        <p class="section-note">Research, teaching, laboratory, and technical experience will be organized chronologically.</p>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item reveal">
+          <div class="timeline-date">Present</div>
+          <div class="timeline-line"><span></span></div>
+          <div class="timeline-card">
+            <p class="timeline-type">Current role</p>
+            <h3>Research experience coming soon</h3>
+            <p class="timeline-place">Organization · Laboratory · Location</p>
+            <ul>
+              <li>Add the central research problem and your contribution.</li>
+              <li>Add experimental systems, algorithms, and technical responsibilities.</li>
+              <li>Add one clear outcome, demonstration, or measurable result.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="timeline-item reveal">
+          <div class="timeline-date">Previous</div>
+          <div class="timeline-line"><span></span></div>
+          <div class="timeline-card">
+            <p class="timeline-type">Teaching / technical role</p>
+            <h3>Additional experience coming soon</h3>
+            <p class="timeline-place">Organization · Department · Location</p>
+            <p>Add teaching, laboratory development, mentoring, or prior professional experience here.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="publications" class="section">
+      <div class="section-head reveal">
+        <div><p class="section-label">Research output</p><h2>Publications</h2></div>
+        <p class="section-note">Journal articles, conference papers, preprints, and presentations can be grouped by topic.</p>
+      </div>
+      <div class="publication-groups">
+        <div class="publication-group reveal">
+          <h3>Free-Space Optical Communication</h3>
+          <article class="publication-card placeholder-card">
+            <span class="pub-status status-planned">Details pending</span>
+            <h4>Publication title will be added here</h4>
+            <p class="authors">Authors · Venue · Year</p>
+            <p class="venue">Abstract, paper, code, and DOI links can be added later.</p>
+          </article>
+          <article class="publication-card placeholder-card">
+            <span class="pub-status status-progress">In preparation</span>
+            <h4>Second publication or conference paper</h4>
+            <p class="authors">Authors · Venue · Year</p>
+            <p class="venue">Use this space for a concise one-line contribution statement.</p>
+          </article>
         </div>
+        <div class="publication-group reveal">
+          <h3>Intelligent Optical Systems</h3>
+          <article class="publication-card placeholder-card">
+            <span class="pub-status status-planned">Details pending</span>
+            <h4>Research output will be added here</h4>
+            <p class="authors">Authors · Venue · Year</p>
+            <p class="venue">Future publication information can be added without changing the page structure.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-head reveal">
+        <div><p class="section-label">Selected work</p><h2>Projects</h2></div>
+        <p class="section-note">The cards are ready for figures, links, technical details, and measured results you provide later.</p>
+      </div>
+      <div class="project-grid">
+        <article class="project-card featured reveal">
+          <div class="project-top"><span class="project-type">Research system</span><span class="project-index">01</span></div>
+          <div class="project-diagram prediction-diagram">
+            <span class="dot d1"></span><span class="dot d2"></span><span class="dot d3"></span><span class="dot d4"></span>
+            <span class="forecast-line"></span><span class="forecast-target"></span>
+          </div>
+          <h3>Predictive Beam Alignment</h3>
+          <p>A framework for anticipating platform motion and steering an optical beam toward where the receiver will be after system latency.</p>
+          <div class="tags"><span>Motion prediction</span><span>Beam steering</span><span>Control</span></div>
+          <div class="project-links"><span>Detailed page coming soon</span></div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-top"><span class="project-type">Sensing</span><span class="project-index">02</span></div>
+          <div class="project-diagram fusion-diagram">
+            <span>IMU</span><span>RANGE</span><span>VISION</span><strong>POSE</strong>
+          </div>
+          <h3>Multi-Sensor Pose Estimation</h3>
+          <p>A real-time sensing pipeline combining complementary measurements to maintain a stable pose estimate for optical control.</p>
+          <div class="tags"><span>Sensor fusion</span><span>Computer vision</span><span>Real time</span></div>
+          <div class="project-links"><span>Results coming soon</span></div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-top"><span class="project-type">Optical design</span><span class="project-index">03</span></div>
+          <div class="project-diagram beam-diagram"><span></span><i></i><strong></strong></div>
+          <h3>Adaptive Beam Shaping</h3>
+          <p>An exploration of beam geometry, divergence, and receiver coupling under motion and atmospheric uncertainty.</p>
+          <div class="tags"><span>Beam profile</span><span>Optimization</span><span>Coupling</span></div>
+          <div class="project-links"><span>Details coming soon</span></div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-top"><span class="project-type">Simulation</span><span class="project-index">04</span></div>
+          <div class="project-diagram link-diagram"><span>TX</span><i></i><span>RX</span></div>
+          <h3>Optical Link Performance</h3>
+          <p>A simulation workflow connecting beam footprint, receiver aperture, optical loss, detector response, and link quality.</p>
+          <div class="tags"><span>Link budget</span><span>Detector</span><span>Modeling</span></div>
+          <div class="project-links"><span>Figures coming soon</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="awards" class="section">
+      <div class="section-head reveal">
+        <div><p class="section-label">Recognition</p><h2>Honors & Awards</h2></div>
+        <p class="section-note">Scholarships, fellowships, competition results, and academic recognition can be listed here.</p>
+      </div>
+      <div class="award-list">
+        <article class="award-card reveal"><span>✦</span><div><h3>Award details coming soon</h3><p>Organization · Year · Brief significance</p></div></article>
+        <article class="award-card reveal"><span>✧</span><div><h3>Scholarship or fellowship</h3><p>Organization · Year · Brief significance</p></div></article>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="section-head reveal">
+        <div><p class="section-label">Technical</p><h2>Skills & Tools</h2></div>
+        <p class="section-note">This taxonomy can be refined as you provide your preferred technical résumé.</p>
+      </div>
+      <div class="skills-grid">
+        <article class="skill-card reveal"><h3>Optics</h3><div><span>Free-space optics</span><span>Beam propagation</span><span>Link budgets</span><span>Optical simulation</span></div></article>
+        <article class="skill-card reveal"><h3>Computation</h3><div><span>MATLAB</span><span>Python</span><span>Numerical modeling</span><span>Data analysis</span></div></article>
+        <article class="skill-card reveal"><h3>Sensing</h3><div><span>IMU</span><span>LiDAR</span><span>Computer vision</span><span>Sensor fusion</span></div></article>
+        <article class="skill-card reveal"><h3>Embedded & Control</h3><div><span>ESP32</span><span>STM32</span><span>MEMS steering</span><span>Real-time control</span></div></article>
+      </div>
+    </section>
+
+    <section id="resume" class="section resume-section">
+      <div class="resume-card reveal">
+        <div>
+          <p class="section-label">Curriculum vitae</p>
+          <h2>Résumé</h2>
+          <p>Your résumé PDF and a compact downloadable CV can be linked here when you provide the file.</p>
+        </div>
+        <span class="disabled-button" aria-disabled="true">Resume coming soon</span>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="section-head reveal">
+        <div><p class="section-label">Get in touch</p><h2>Contact</h2></div>
+        <p class="section-note">Public contact channels can be added only when you decide what you want displayed.</p>
+      </div>
+      <div class="contact-grid reveal">
+        <a class="contact-card" href="https://github.com/SaadmanYasar" target="_blank" rel="noreferrer"><span>GitHub</span><strong>@SaadmanYasar</strong><i>↗</i></a>
+        <div class="contact-card inactive"><span>Email</span><strong>To be added</strong><i>—</i></div>
+        <div class="contact-card inactive"><span>LinkedIn</span><strong>To be added</strong><i>—</i></div>
+        <div class="contact-card inactive"><span>Google Scholar</span><strong>To be added</strong><i>—</i></div>
       </div>
     </section>
   </main>
 
-  <footer class="footer shell">
+  <footer>
     <span>© <span id="year">2026</span> Saadman Yasar</span>
-    <span>Optics · Autonomy · Intelligent systems</span>
+    <span>Built for optics, autonomy, and intelligent systems.</span>
   </footer>
 
   <script src="script.js"></script>
