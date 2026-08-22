@@ -21,6 +21,7 @@
       <span></span><span></span><span class="sr-only">Open navigation</span>
     </button>
     <ul class="nav-menu" id="nav-menu">
+      <li><a href="about.html">About</a></li>
       <li><a href="#news">News</a></li>
       <li><a href="#research">Research</a></li>
       <li><a href="#education">Education</a></li>
@@ -39,7 +40,7 @@
         <div class="hero-tag"><span></span> Optics · Autonomy · Intelligent Systems</div>
         <p class="hero-kicker">Research portfolio</p>
         <h1>Saadman<br>Yasar</h1>
-        <p class="hero-statement">I build optical systems that <em>think ahead.</em></p>
+        <p class="hero-statement">I build optical systems that <em class="yellow-accent">think ahead.</em></p>
         <p class="hero-bio">A growing portfolio of work in free-space optical communication, motion prediction, multi-sensor estimation, and real-time beam control. Detailed project and publication information will be added here progressively.</p>
         <div class="hero-actions">
           <a class="primary-action" href="#projects">View projects <span>↓</span></a>
@@ -47,33 +48,19 @@
         </div>
       </div>
 
-      <div class="hero-orbit" aria-label="Abstract predictive optical link graphic">
+      <div class="hero-orbit portrait-orbit" aria-label="Portrait of Saadman Yasar">
         <div class="orbit-grid"></div>
-        <svg viewBox="0 0 440 440" role="img" aria-label="Optical beam tracking a moving target">
-          <defs>
-            <linearGradient id="pathGradient" x1="0" x2="1">
-              <stop offset="0" stop-color="#38bdf8" stop-opacity=".1"/>
-              <stop offset=".5" stop-color="#38bdf8"/>
-              <stop offset="1" stop-color="#6ee7b7"/>
-            </linearGradient>
-            <radialGradient id="targetGlow">
-              <stop offset="0" stop-color="#6ee7b7" stop-opacity=".5"/>
-              <stop offset="1" stop-color="#6ee7b7" stop-opacity="0"/>
-            </radialGradient>
-          </defs>
-          <circle class="ring ring-a" cx="220" cy="220" r="155"/>
-          <circle class="ring ring-b" cx="220" cy="220" r="108"/>
-          <path class="route route-one" d="M48 328C110 302 129 221 205 202S306 218 356 120"/>
-          <path class="route route-two" d="M40 350C128 356 162 290 225 270S332 243 392 170"/>
-          <circle class="source" cx="48" cy="328" r="6"/>
-          <circle class="target-glow" cx="356" cy="120" r="48"/>
-          <circle class="target-pulse" cx="356" cy="120" r="23"/>
-          <circle class="target" cx="356" cy="120" r="6"/>
-          <path class="crosshair" d="M356 84v20m0 32v20m-36-36h20m32 0h20"/>
+        <svg class="portrait-rings" viewBox="0 0 440 440" aria-hidden="true">
+          <circle class="ring ring-a" cx="220" cy="220" r="168"/>
+          <circle class="ring ring-b" cx="220" cy="220" r="132"/>
+          <path class="route route-one" d="M55 330C118 298 142 208 216 190S318 205 382 112"/>
+          <circle class="source" cx="55" cy="330" r="6"/>
+          <circle class="target-pulse" cx="382" cy="112" r="22"/>
+          <circle class="target" cx="382" cy="112" r="6"/>
         </svg>
-        <div class="orbit-label top"><span>SYSTEM</span><strong>Predictive optics</strong></div>
-        <div class="orbit-label bottom-left"><span>SENSE</span><strong>Present state</strong></div>
-        <div class="orbit-label bottom-right"><span>ACT</span><strong>Future state</strong></div>
+        <div class="portrait-frame"><img src="assets/yasar-portrait.jpeg" alt="Saadman Yasar standing in a mountain landscape"></div>
+        <div class="portrait-badge portrait-role"><span>FOCUS</span><strong>Optics + autonomy</strong></div>
+        <div class="portrait-badge portrait-place"><span>BASED AT</span><strong>UCF · CREOL</strong></div>
         <div class="initials">SY</div>
       </div>
     </section>
@@ -242,7 +229,7 @@
         <p class="section-note">The cards are ready for figures, links, technical details, and measured results you provide later.</p>
       </div>
       <div class="project-grid">
-        <article class="project-card featured reveal">
+        <a href="projects/predictive-beam-alignment.html" class="project-card featured reveal">
           <div class="project-top"><span class="project-type">Research system</span><span class="project-index">01</span></div>
           <div class="project-diagram prediction-diagram">
             <span class="dot d1"></span><span class="dot d2"></span><span class="dot d3"></span><span class="dot d4"></span>
@@ -251,10 +238,10 @@
           <h3>Predictive Beam Alignment</h3>
           <p>A framework for anticipating platform motion and steering an optical beam toward where the receiver will be after system latency.</p>
           <div class="tags"><span>Motion prediction</span><span>Beam steering</span><span>Control</span></div>
-          <div class="project-links"><span>Detailed page coming soon</span></div>
-        </article>
+          <div class="project-links"><span>Open visual case study</span><strong>↗</strong></div>
+        </a>
 
-        <article class="project-card reveal">
+        <a href="projects/multi-sensor-pose-estimation.html" class="project-card reveal">
           <div class="project-top"><span class="project-type">Sensing</span><span class="project-index">02</span></div>
           <div class="project-diagram fusion-diagram">
             <span>IMU</span><span>RANGE</span><span>VISION</span><strong>POSE</strong>
@@ -262,26 +249,26 @@
           <h3>Multi-Sensor Pose Estimation</h3>
           <p>A real-time sensing pipeline combining complementary measurements to maintain a stable pose estimate for optical control.</p>
           <div class="tags"><span>Sensor fusion</span><span>Computer vision</span><span>Real time</span></div>
-          <div class="project-links"><span>Results coming soon</span></div>
-        </article>
+          <div class="project-links"><span>Open visual case study</span><strong>↗</strong></div>
+        </a>
 
-        <article class="project-card reveal">
+        <a href="projects/adaptive-beam-shaping.html" class="project-card reveal">
           <div class="project-top"><span class="project-type">Optical design</span><span class="project-index">03</span></div>
           <div class="project-diagram beam-diagram"><span></span><i></i><strong></strong></div>
           <h3>Adaptive Beam Shaping</h3>
           <p>An exploration of beam geometry, divergence, and receiver coupling under motion and atmospheric uncertainty.</p>
           <div class="tags"><span>Beam profile</span><span>Optimization</span><span>Coupling</span></div>
-          <div class="project-links"><span>Details coming soon</span></div>
-        </article>
+          <div class="project-links"><span>Open visual case study</span><strong>↗</strong></div>
+        </a>
 
-        <article class="project-card reveal">
+        <a href="projects/optical-link-performance.html" class="project-card reveal">
           <div class="project-top"><span class="project-type">Simulation</span><span class="project-index">04</span></div>
           <div class="project-diagram link-diagram"><span>TX</span><i></i><span>RX</span></div>
           <h3>Optical Link Performance</h3>
           <p>A simulation workflow connecting beam footprint, receiver aperture, optical loss, detector response, and link quality.</p>
           <div class="tags"><span>Link budget</span><span>Detector</span><span>Modeling</span></div>
-          <div class="project-links"><span>Figures coming soon</span></div>
-        </article>
+          <div class="project-links"><span>Open visual case study</span><strong>↗</strong></div>
+        </a>
       </div>
     </section>
 
