@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Saadman Yasar — optical systems, sensing, and intelligent autonomy.">
+  <meta name="theme-color" content="#07101d">
+  <title>Saadman Yasar — Optical Systems</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav shell" aria-label="Primary navigation">
+      <a class="logo" href="#top" aria-label="Saadman Yasar, home">SY<span>.</span></a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span class="sr-only">Open menu</span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a class="nav-contact" href="https://github.com/SaadmanYasar">GitHub <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero shell" id="top">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span></span> Optics · autonomy · intelligent systems</p>
+        <h1>I build optical systems that <em>think ahead.</em></h1>
+        <p class="lede">I'm Saadman Yasar. This portfolio explores predictive optical systems, real-time sensing, and autonomous platforms.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">Explore the work <span aria-hidden="true">→</span></a>
+          <p>Research portfolio <span>2026</span></p>
+        </div>
+      </div>
+
+      <div class="signal-card reveal" aria-label="Abstract visualization of a predictive optical tracking system">
+        <div class="signal-label"><span>OPTICAL LINK</span><span>PREDICTIVE TRACKING</span></div>
+        <svg viewBox="0 0 540 560" role="img" aria-label="A blue prediction path converging on an amber optical target">
+          <defs>
+            <linearGradient id="beam" x1="0" x2="1">
+              <stop offset="0" stop-color="#2764ff" stop-opacity="0"/>
+              <stop offset=".35" stop-color="#2764ff"/>
+              <stop offset="1" stop-color="#ffb23f"/>
+            </linearGradient>
+            <radialGradient id="glow">
+              <stop offset="0" stop-color="#ffb23f" stop-opacity=".45"/>
+              <stop offset="1" stop-color="#ffb23f" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <path class="orbit" d="M76 372C116 118 426 61 474 298C507 462 324 511 197 417C97 343 162 186 286 177"/>
+          <path class="orbit orbit-two" d="M87 465C-4 304 113 117 304 126C478 135 539 344 398 477"/>
+          <path class="beam" d="M32 458C133 416 167 318 260 286S381 287 446 190"/>
+          <circle class="origin" cx="32" cy="458" r="7"/>
+          <circle class="target-glow" cx="446" cy="190" r="58"/>
+          <circle class="pulse" cx="446" cy="190" r="31"/>
+          <circle class="target" cx="446" cy="190" r="7"/>
+          <path class="crosshair" d="M446 145v25m0 40v25m-45-45h25m40 0h25"/>
+        </svg>
+        <div class="readout readout-left"><span>SENSING</span><strong>Real time</strong></div>
+        <div class="readout readout-right"><span>PREDICTION</span><strong>Ahead</strong></div>
+      </div>
+    </section>
+
+    <section class="metrics" aria-label="Focus areas">
+      <div class="shell metrics-grid">
+        <div><strong>Optics</strong><span>Free-space links</span></div>
+        <div><strong>Sensing</strong><span>Multi-sensor systems</span></div>
+        <div><strong>Control</strong><span>Beam steering</span></div>
+        <div><strong>AI</strong><span>Motion prediction</span></div>
+      </div>
+    </section>
+
+    <section class="work shell" id="work">
+      <header class="section-heading reveal">
+        <p class="eyebrow"><span></span> Selected focus</p>
+        <p>Two connected ideas: predicting motion and keeping an optical link aligned while the platform moves.</p>
+      </header>
+
+      <div class="project-grid">
+        <article class="project project-blue reveal">
+          <div class="project-number"><span>01</span><span>Predictive control</span></div>
+          <div class="project-visual">
+            <div class="prediction-line"></div>
+            <span class="sample s1"></span><span class="sample s2"></span><span class="sample s3"></span><span class="sample s4"></span>
+            <span class="future-point"></span>
+          </div>
+          <h2>Beam alignment<br>before motion happens.</h2>
+          <p>Using predicted motion to move an optical steering system ahead of latency instead of reacting after misalignment occurs.</p>
+          <div class="tags"><span>Prediction</span><span>Beam steering</span><span>Free-space optics</span></div>
+        </article>
+
+        <article class="project project-amber reveal">
+          <div class="project-number"><span>02</span><span>Sensor fusion</span></div>
+          <div class="project-visual sensor-visual">
+            <span class="sensor-node node-one">IMU</span>
+            <span class="sensor-node node-two">RANGE</span>
+            <span class="sensor-node node-three">VISION</span>
+            <span class="fusion-node">POSE</span>
+          </div>
+          <h2>One reliable pose<br>from noisy sensors.</h2>
+          <p>Combining complementary sensor streams into a stable motion estimate designed for real-time optical control.</p>
+          <div class="tags"><span>IMU</span><span>Ranging</span><span>Computer vision</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="about shell" id="about">
+      <p class="eyebrow reveal"><span></span> Approach</p>
+      <div class="about-grid">
+        <h2 class="reveal">Sense the present.<br><em>Predict the next.</em></h2>
+        <div class="about-copy reveal">
+          <p>The work focuses on translating difficult physical problems into systems that can sense, predict, and act in real time.</p>
+          <a href="https://github.com/SaadmanYasar">View GitHub profile <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer shell">
+    <span>© <span id="year">2026</span> Saadman Yasar</span>
+    <span>Optics · Autonomy · Intelligent systems</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
