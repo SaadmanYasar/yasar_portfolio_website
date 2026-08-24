@@ -319,5 +319,22 @@
 </div>
 </footer>
 </main>
+<script>
+(() => {
+  const jumpToPublications = () => {
+    if (window.location.hash !== "#publications") return;
+    const target = document.getElementById("publications");
+    if (!target) return;
+    const root = document.documentElement;
+    const previousBehavior = root.style.scrollBehavior;
+    root.style.scrollBehavior = "auto";
+    target.scrollIntoView({ block: "start" });
+    root.style.scrollBehavior = previousBehavior;
+  };
+
+  jumpToPublications();
+  window.addEventListener("load", jumpToPublications, { once: true });
+})();
+</script>
 </body>
 </html>
